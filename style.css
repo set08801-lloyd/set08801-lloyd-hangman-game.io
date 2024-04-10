@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:  "Kode Mono", monospace;;
+}
+body {
+  background-color: #c21aca;
+}
+.main {
+  font-size: 16px;
+  background-color: #ecf310;
+  width: 90vw;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 0.6em;
+  box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+}
+#options-section {
+  text-align: center;
+}
+#options-section div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 0 2.4em 0;
+}
+#options-section button {
+  cursor:pointer;		
+  padding: 0.6em 1.2em;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 0.3em;
+  text-transform: capitalize;
+}
+#options-section button:disabled {
+  cursor:no-drop;		
+  border: 3px solid #808080;
+  color: #808080;
+  background-color: #e9e50f;
+}
+#options-section button.active {
+  background-color: #f4c531;
+  border: 3px solid #000000;
+  color: #000000;
+}
+.letter-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
+}
+.letter-container button {
+  height: 2.4em;
+  width: 2.4em;
+  border-radius: 0.3em;
+  background-color: #ffffff;
+  cursor:pointer;
+}
+#new-game-section {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6em;
+}
+
+#input-section {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+canvas {
+  display: block;
+  margin: auto;
+  border: 1px solid #000000;
+  background-color:#ffffff;
+}
+.isHidden {
+  display: none !important;
+}
+#result-section h2 {
+  font-size: 1.8em;
+  text-align: center;
+}
+#result-section p {
+  font-size: 1.25em;
+  margin: 1em 0 2em 0;
+}
+#result-section span {
+  font-weight: 600;
+}
+#gameButton {
+  font-size: 1.25em;
+  padding: 0.5em 1em;
+  background-color: #f4c531;
+  border: 3px solid #000000;
+  color: #000000;
+  border-radius: 0.2em;
+  cursor:pointer;
+}
+.win-msg {
+  color: #39d78d;
+}
+.lose-msg {
+  color: #fe5152;
+}
